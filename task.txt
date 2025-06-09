@@ -1,0 +1,23 @@
+Scenario 
+Create a blog application with dynamic routing and data fetching. 
+Requirements:  
+● Homepage listing all blog posts with pagination 
+● Individual blog post pages with dynamic routes 
+● Static generation for blog posts 
+● Search functionality with client-side filtering 
+● SEO optimization with proper meta tags 
+Technical Implementation: 
+● Use getStaticProps and getStaticPaths 
+● Implement incremental static regeneration (ISR) 
+● Create API routes for search functionality 
+● Use Next.js Image component for optimization 
+● Implement proper SEO with next/head 
+File Structure Expected: 
+pages/ 
+├── index.tsx (homepage) 
+├── blog/ 
+│   ├── [slug].tsx (dynamic blog post) 
+│   └── page/[pageNumber].tsx (pagination) 
+├── api/ 
+│   └── search.ts 
+└── _app.tsx
