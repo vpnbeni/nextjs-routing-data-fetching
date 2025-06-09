@@ -34,7 +34,7 @@ export default async function BlogPost({
 }: {
   params: { slug: string };
 }) {
-  const post = getPostBySlug(params.slug); // still sync
+  const post = getPostBySlug(params.slug);
 
   if (!post) {
     notFound();

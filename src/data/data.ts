@@ -54,7 +54,7 @@ const blogs: BlogPost[] = [
       <p>We’ll look at examples and best practices for each method.</p>
     `,
     tags: ["nextjs", "css", "tailwind", "styling"],
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=400&fit=crop",
+    image: "https://plus.unsplash.com/premium_photo-1682145730713-34bba6d3d14a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     readTime: 6
   },
   {
@@ -69,7 +69,7 @@ const blogs: BlogPost[] = [
       <p>This article covers the basics of creating and using API endpoints in your project.</p>
     `,
     tags: ["nextjs", "api", "backend"],
-    image: "https://images.unsplash.com/photo-1581090700227-1e8b2e99f6c3?w=800&h=400&fit=crop",
+    image: "https://plus.unsplash.com/premium_photo-1682145730713-34bba6d3d14a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     readTime: 5
   },
   {
@@ -84,7 +84,7 @@ const blogs: BlogPost[] = [
       <p>We'll walk through connecting your repo, setting up builds, and going live.</p>
     `,
     tags: ["nextjs", "vercel", "deployment"],
-    image: "https://images.unsplash.com/photo-1581093448798-5bc25c41a467?w=800&h=400&fit=crop",
+    image: "https://plus.unsplash.com/premium_photo-1682145730713-34bba6d3d14a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     readTime: 4
   },
   {
@@ -99,7 +99,7 @@ const blogs: BlogPost[] = [
       <p>Learn how to analyze and improve your site’s speed and user experience.</p>
     `,
     tags: ["nextjs", "performance", "seo"],
-    image: "https://images.unsplash.com/photo-1542751110-97427bbecf20?w=800&h=400&fit=crop",
+    image: "https://plus.unsplash.com/premium_photo-1682145730713-34bba6d3d14a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     readTime: 8
   },
   {

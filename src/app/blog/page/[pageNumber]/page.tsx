@@ -11,19 +11,6 @@ interface PageProps {
   };
 }
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const pageNumber = parseInt(params.pageNumber);
-
-  return {
-    title: `Blog Posts - Page ${pageNumber} | Tech Blog`,
-    description: `Browse blog posts on page ${pageNumber}. Discover articles about web development, Next.js, React, and more.`,
-    openGraph: {
-      title: `Blog Posts - Page ${pageNumber} | Tech Blog`,
-      description: `Browse blog posts on page ${pageNumber}. Discover articles about web development, Next.js, React, and more.`,
-      type: 'website',
-    },
-  };
-}
 
 export default function BlogPageNumber({ params }: PageProps) {
   const pageNumber = parseInt(params.pageNumber);
