@@ -4,13 +4,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import blogs, { getPostBySlug } from '@/data/data';
 
-interface PageProps {
-  params: {
-    slug: string;
-  };
-}
-
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<Metadata> {
   const post = getPostBySlug(params.slug);
 
   if (!post) {
@@ -31,7 +29,11 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function BlogPost({ params }: PageProps) {
+export default function BlogPost({
+  params,
+}: {
+  params: { slug: string };
+}) {
   const post = getPostBySlug(params.slug);
 
   if (!post) {
