@@ -29,12 +29,12 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function BlogPost({
+export default async function BlogPost({
   params,
 }: {
   params: { slug: string };
 }) {
-  const post = getPostBySlug(params.slug);
+  const post = getPostBySlug(params.slug); // still sync
 
   if (!post) {
     notFound();
