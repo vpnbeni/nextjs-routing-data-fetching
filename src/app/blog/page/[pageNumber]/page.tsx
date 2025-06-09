@@ -1,4 +1,3 @@
-import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getPaginatedPosts } from '@/data/data';
 import BlogCard from '@/components/BlogCard';
@@ -6,14 +5,15 @@ import SearchBar from '@/components/SearchBar';
 import Pagination from '@/components/Pagination';
 
 interface PageProps {
-  params: {
+  params: Promise<{
     pageNumber: string;
-  };
+  }>;
 }
 
 
-export default function BlogPageNumber({ params }: PageProps) {
-  const pageNumber = parseInt(params.pageNumber);
+export default async function BlogPageNumber({ params }: PageProps) {
+  const { pageNumber: pageNumberStr } = await params;
+  const pageNumber = parseInt(pageNumberStr);
   
   if (isNaN(pageNumber) || pageNumber < 1) {
     notFound();
